@@ -11,7 +11,8 @@ int main(void)
     adc_init();
     timer0_init();
     uart_init();
-
+	set_PWM_A( 33 );
+	set_PWM_B( 67 );
     while (1) 
     {
     }
