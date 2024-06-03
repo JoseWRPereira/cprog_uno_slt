@@ -9,6 +9,7 @@ DIST=dist/default/production
 
 
 SRCS=$(wildcard *.c)
+HDRS=$(wildcard *.h)
 BUILDS=$(SRCS:%.c=$(BUILD)/%.o)
 
 
@@ -63,3 +64,13 @@ $(BUILD)/%.o: %.c
 build:
 	mkdir "$(BUILD)"
 	mkdir "$(DIST)"
+
+
+notepad:
+	@C:\Program Files\Notepad++\notepad++.exe main.c $(SRCS) $(HDRS)
+
+
+
+
+flash:
+	@C:\Program Files (x86)\AVRDUDESS\avrdudess.exe

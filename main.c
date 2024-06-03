@@ -9,7 +9,7 @@ int main(void)
     int ad = 0;
     gpio_init();
     adc_init();
-    timer0_init();
+    timer0_PWM_init();
     uart_init();
 	set_PWM_A( 33 );
 	set_PWM_B( 67 );
