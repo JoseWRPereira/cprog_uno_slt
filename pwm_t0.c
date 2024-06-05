@@ -27,7 +27,7 @@
 
 
 
-void timer0_PWM_init( void )
+void pwm_t0_init( void )
 {
     cli();
 		// Hab. pinos como saída
@@ -50,7 +50,7 @@ void timer0_PWM_init( void )
     sei();
 }
 
-void set_PWM_A( unsigned int pwm )
+void set_pwm_a( unsigned int pwm )
 {
 	if( pwm == 0 )
 	{
@@ -63,7 +63,7 @@ void set_PWM_A( unsigned int pwm )
 	}
 }
 
-void set_PWM_B( unsigned int pwm )
+void set_pwm_b( unsigned int pwm )
 {
 	if( pwm == 0 )
 	{
